@@ -1,4 +1,6 @@
 # UNET_double applied to PLANET image containing 11 bands: 8 Planet images  + 3 indexes (NDVI, MSAVI2 and NDWI). The area os study is TILE 130 from the Arizona Grid of the Tree Stress Project
+![image](https://github.com/user-attachments/assets/9552f989-c7e8-4255-9372-c5d76cd2440a)
+
 This is an Python code to apply the UNET model to a Planet image composite containing 8 Planet bands plus three vegetation indixes: NDVI, MSAVI2 and NDWI. Total 11 bands for TILE 130 of the Arizona tiles used for the Tree Stress Project.
 The file "Define_UNET_Architecture.py" contains a two sections: 1) Training the UNET model and 2) Define the UNET Architecture.
   1) The training UNET model prepares the data set for training.
@@ -14,9 +16,11 @@ The file "Define_UNET_Architecture.py" contains a two sections: 1) Training the 
       a) Uses a softmax activation instead a sigmoid
   4)  Compile the model
 
+The repository contains the Planet composite of TILE 130: "TILE130_full_11bands_renamed.tif"
+5 Geojson files, each corresponding to a class (stressed_trees, non_stressed_tress, dead_trees, water, others)
 
 
-![image](https://github.com/user-attachments/assets/9552f989-c7e8-4255-9372-c5d76cd2440a)
+
 
 
 [Using U-Net-Like Deep Convolutional Neural Neural Networks for Precise Tree Recognition in very high resolution Satellite images.pdf](https://github.com/user-attachments/files/19522980/Using.U-Net-Like.Deep.Convolutional.Neural.Neural.Networks.for.Precise.Tree.Recognition.in.very.high.resolution.Satellite.images.pdf)
